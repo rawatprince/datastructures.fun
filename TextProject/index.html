@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextEditor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="stack.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+<div id="container">
+    <div class="text_box" style="padding: 60px">
+        Type in the box below
+        <br><br>
+        <textarea class="form-control" id="comment" style="height: 100%;">
+            </textarea>
+    </div>
+    <div class="text_box" style="overflow-y: scroll">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Sequence of operations will be shown here !
+            </span>
+    </div>
+</div>
+
+<div>
+    <br>
+    <button type="button" class="btn btn-success" id="undo">&nbsp;&nbsp;&nbsp;Undo&nbsp;&nbsp;&nbsp;</button>
+    <br>
+    <button type="button" class="btn btn-danger" id="clear">Clear Box</button>
+</div>
+</body>
+</html>

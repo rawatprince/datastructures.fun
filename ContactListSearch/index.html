@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact List Search</title>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="stylee.css" rel="stylesheet">
+    <script src="Trie.js"></script>
+    <script type="module" src="script.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div class="text_box" style="display: flex">
+        <form autocomplete="off" style="margin: auto">
+            <h5>Search</h5>
+            <br>
+            <div class="autocomplete" style="width:350px;">
+                <input id="myInput" placeholder="Enter Number" type="text">
+            </div>
+            <input type="submit" value="Cancel">
+        </form>
+    </div>
+    <div class="text_box" style="overflow-y: scroll">
+            <span id="info">
+            </span>
+    </div>
+</div>
+<div class="center_input">
+    <input id="contact_input" placeholder="Enter contact name and number (separated by comma)" type="text">
+    <button class="btn btn-success" id="add">Add Contact</button>
+</div>
+<div class="center_input">
+    <input id="delete_input" placeholder="Enter contact number" type="text">
+    <button class="btn btn-danger" id="del">Delete Contact</button>
+</div>
+<template>
+    <div class="list-group-item list-group-item-action" style="display: inline-flex">
+            <span class="ks-avatar" style="align-content: center">
+                <img id="Image" src="./logo.png" style="margin: 10px; height: 40px; width: 40px">
+            </span>
+        <div>
+            <span id="Name">dummy</span>
+            <br>
+            <span id="Number">just now</span>
+        </div>
+    </div>
+</template>
+</body>
+
+
+</html>
